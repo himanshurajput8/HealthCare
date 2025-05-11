@@ -6,7 +6,7 @@ import { ChiefComplaint } from "../components/chiefComplaintNote/ChiefComplaintN
 import { GeneralExamination } from "../components/generalExamination/GeneralExamination";
 import { Signtaure } from "../components/signature/Signature";
 import Button from "../components/button/Button";
-import { History } from "../components/History/History";
+import { History } from "../components/illnessHistory/History";
 
 export const MainLayout = ()=> {
     const methods = useForm()
