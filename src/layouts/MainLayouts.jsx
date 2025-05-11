@@ -3,11 +3,10 @@ import { useState } from "react";
 import { PatientProfile } from "../components/patientsDemographics/PatientProfiles";
 import { FormProvider, useForm } from "react-hook-form";
 import { ChiefComplaint } from "../components/chiefComplaintNote/ChiefComplaintNote";
-import { History } from "../components/History/History";
 import { GeneralExamination } from "../components/generalExamination/GeneralExamination";
 import { Signtaure } from "../components/signature/Signature";
 import Button from "../components/button/Button";
-
+import { History } from "../components/History/History";
 
 export const MainLayout = ()=> {
     const methods = useForm()
