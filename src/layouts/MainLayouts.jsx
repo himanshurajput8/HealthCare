@@ -2,10 +2,10 @@ import React from "react";
 import { useState } from "react";
 import { PatientProfile } from "../components/patientsDemographics/PatientProfiles";
 import { FormProvider, useForm } from "react-hook-form";
-import { ChiefComplaint } from "../components/chiefComplaintNote/ChiefComplaintNote";
-import { GeneralExamination } from "../components/generalExamination/GeneralExamination";
-import { Signtaure } from "../components/signature/Signature";
-import Button from "../components/button/Button";
+import { ChiefComplaint } from "../components/chiefComplaintNoteComp/ChiefComplaintNote";
+import { GeneralExamination } from "../components/generalExaminationComp/GeneralExamination";
+import { Signtaure } from "../components/signatureComp/Signature";
+import Button from "../components/buttonComp/Button";
 import { History } from "../components/illnessHistory/History";
 
 export const MainLayout = ()=> {
