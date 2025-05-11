@@ -1,0 +1,15 @@
+.submit-container{
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+}
+.submit-btn{
+    background-color: green;
+    padding: 10px 12px;
+    text-align: center;
+    width: 130px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 14px;
+}

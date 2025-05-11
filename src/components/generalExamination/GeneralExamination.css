@@ -1,0 +1,85 @@
+.general-exam-container {
+    padding: 1rem;
+    padding-left: 21%;    
+}
+.general-exam-container h2{
+    margin-left: -3.5rem;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 5rem 0rem 4rem 0rem;
+    font-weight: bold;
+   
+}
+
+.input-row label input {
+   padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50px;
+    margin: 0px 5px;
+}
+
+.input-row label:nth-child(2){
+    margin-left: 10rem;
+}
+
+.input-row label:nth-child(3){
+    margin-left: 10rem;
+}
+
+.build-section, .piccle-section {
+    margin-bottom: 4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.build-section-input{
+    margin-left: 9rem;
+}
+.piccle-section-input{
+    margin-left: 7rem;
+}
+
+.build-option {
+  display: inline-block;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+  border: 1px solid #ccc;  
+  
+}
+
+.build-option input[type="radio"] {
+  display: none;
+}
+
+.build-option.selected {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+
+
+
+.piccle-button {
+    margin: 0 1rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.piccle-button.selected {
+    background-color: #4caf50;
+    color: white;
+    border-color: #4caf50;
+}

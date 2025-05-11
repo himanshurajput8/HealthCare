@@ -1,0 +1,100 @@
+.chiefComplaintContainer{
+       padding-bottom: 4rem;
+}
+.complaintHeader {
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+}
+
+.complaintRow {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 0.5rem;
+}
+
+.complaintRow input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.complaintHeader h2 {
+    font-weight: bold;
+
+}
+
+.noOfDays input {
+    width: 50px;
+}
+
+.noOfDays span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.since {
+    margin-left: 50px;
+}
+
+.chiefComplaintNote {
+    margin-left: 15rem;
+}
+
+.deleteButton {
+    background-color: rgba(255, 0, 0, 0.497);
+    border: none;
+    padding: 5px 8px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+
+.addButton {
+    border: none;
+    position: absolute;
+    right: 21.2rem;
+    margin-top: 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 128, 0, 0.623);
+}
+
+/* responsive code */
+@media only screen and (max-width: 768px) {
+    .complaintHeader {
+        gap: 1rem;
+    }
+
+    .complaintHeader h2 {
+        font-size: 18px;
+    }
+
+    .since {
+        margin-left: 5px;
+    }
+
+    .complaintRow {
+        gap: 1.5rem;
+    }
+
+    .complaintRow input {
+        padding: 2px 6px;
+        width: 90px;
+
+    }
+    .noOfDays input {
+    width: 20px;
+}
+.noOfDays span {
+    margin-left: 5px;
+    font-weight: bold;
+}
+.chiefComplaintNote {
+    margin-left: 2.5rem;
+}
+}

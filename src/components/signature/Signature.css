@@ -1,0 +1,26 @@
+.provisional-diagnosis{
+    margin-left: 21rem;
+    margin-top: 3rem;
+}
+.provisional-diagnosis label{
+    font-weight: bold;
+}
+.provisional-diagnosis input{
+padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signature {
+    display: flex;
+    justify-content: right;
+    width: 78%;
+    font-weight: bold;
+}
+.signature input{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 1rem;
+
+}
