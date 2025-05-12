@@ -1,46 +1,55 @@
-.historyContainer{
+.historyContainer {
     margin-top: 5rem;
 }
-.history{
+
+.history {
     display: flex;
     gap: 5rem;
     margin-left: 22%;
     margin-top: 20px;
 }
-.label{
+
+.label {
     width: 30%;
 }
-.label label{
+
+.label label {
     font-size: 18px;
     font-weight: bold;
 }
-.textarea{
-    /* border: 1px solid #ccc; */
+
+.textarea {
     width: 100%;
 }
-.textarea textarea{
+
+.textarea textarea {
     border-radius: 8px;
     width: 60%;
     height: 8vh;
 }
+
 @media only screen and (max-width: 768px) {
-    .history{
-    gap: 1rem;
-    margin-left: 10%;
-    margin-top: 20px;
-}
-.label label{
-    font-size: 14px;
-    font-weight: bold;
-}
-.label{
-    width: 70%;
-}
-.textarea textarea{
-    width: 90%;
-}
-.history{
-    gap: 0.5rem;
-    margin-left: 3%;
-}
+    .history {
+        gap: 1rem;
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+
+    .label label {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .label {
+        width: 70%;
+    }
+
+    .textarea textarea {
+        width: 90%;
+    }
+
+    .history {
+        gap: 0.5rem;
+        margin-left: 3%;
+    }
 }

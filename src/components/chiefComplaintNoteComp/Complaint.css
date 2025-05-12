@@ -1,6 +1,7 @@
-.chiefComplaintContainer{
-       padding-bottom: 4rem;
+.chiefComplaintContainer {
+    padding-bottom: 4rem;
 }
+
 .complaintHeader {
     display: flex;
     justify-content: center;
@@ -89,18 +90,22 @@
         width: 90px;
 
     }
+
     .noOfDays input {
-    width: 20px;
-}
-.noOfDays span {
-    margin-left: 5px;
-    font-weight: bold;
-}
-.chiefComplaintNote {
-    margin-left: 2.5rem;
-}
-.addButton {
-    right: 4rem;
-    padding: 5px 15px;
-}
+        width: 20px;
+    }
+
+    .noOfDays span {
+        margin-left: 5px;
+        font-weight: bold;
+    }
+
+    .chiefComplaintNote {
+        margin-left: 2.5rem;
+    }
+
+    .addButton {
+        right: 4rem;
+        padding: 5px 15px;
+    }
 }

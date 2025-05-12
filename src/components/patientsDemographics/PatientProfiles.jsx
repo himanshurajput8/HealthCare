@@ -21,44 +21,44 @@ export const PatientProfile = () => {
                 years--;
             }
             setAge(years);
-            setValue("age", years); // Save to form state too
+            setValue("age", years);
         }
     }, [dob, setValue]);
 
     return (
         <div className="demographics-container">
-        <h2 className="section-heading">Patient Demographics</h2>
-        <div className="form-container">
-            <div>
-                <h2>Patient Profile</h2>
-                <div className="formGroup">
-                    <label htmlFor="name">Name: </label><input id="name" {...register("name")} />
-                    <label htmlFor="age">Age: </label><span><input id="age" value={age} readOnly /> <input type="date" {...register("dob")} /></span>
-                </div>
+            <h2 className="section-heading">Patient Demographics</h2>
+            <div className="form-container">
+                <div>
+                    <h2>Patient Profile</h2>
+                    <div className="formGroup">
+                        <label htmlFor="name">Name: </label><input id="name" {...register("name")} />
+                        <label htmlFor="age">Age: </label><span><input id="age" value={age} readOnly /> <input type="date" {...register("dob")} /></span>
+                    </div>
 
                     <div className="form-group">
                         <div className="gender-group">
                             <label>Gender:</label>
 
                             <div className="options">
-                            <label className="gender-option m">
-                                <input type="radio" name="gender" value="M" {...register("gender")}/>
-                                <div className="gender-label">M</div>
-                            </label>
-                            <label className="gender-option f">
-                                <input type="radio" name="gender" value="F" {...register("gender")}/>
-                                <div className="gender-label">F</div>
-                            </label>
-                            <label className="gender-option o">
-                                <input type="radio" name="gender" value="O" {...register("gender")}/>
-                                <div className="gender-label">O</div>
-                            </label>
+                                <label className="gender-option m">
+                                    <input type="radio" name="gender" value="M" {...register("gender")} />
+                                    <div className="gender-label">M</div>
+                                </label>
+                                <label className="gender-option f">
+                                    <input type="radio" name="gender" value="F" {...register("gender")} />
+                                    <div className="gender-label">F</div>
+                                </label>
+                                <label className="gender-option o">
+                                    <input type="radio" name="gender" value="O" {...register("gender")} />
+                                    <div className="gender-label">O</div>
+                                </label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <OtherDemographics />
             </div>
-            </div>
-            )
+        </div>
+    )
 }       

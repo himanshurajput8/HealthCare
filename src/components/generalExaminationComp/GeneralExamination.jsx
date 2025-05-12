@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './GeneralExamination.css'; 
+import './GeneralExamination.css';
 import { useFormContext } from "react-hook-form";
 
 export const GeneralExamination = () => {
@@ -64,11 +64,11 @@ export const GeneralExamination = () => {
                 <label>Build: </label>
                 <div className="build-section-input">
                     {buildOptions.map(option => (
-                    <label key={option} className={`build-option ${build === option ? 'selected' : ''}`}>
-                        <input type="radio" name="build" value={option} checked={build === option} onChange={(e) => setBuild(e.target.value)} />
-                        {option}
-                    </label>
-                ))}
+                        <label key={option} className={`build-option ${build === option ? 'selected' : ''}`}>
+                            <input type="radio" name="build" value={option} checked={build === option} onChange={(e) => setBuild(e.target.value)} />
+                            {option}
+                        </label>
+                    ))}
                 </div>
             </div>
 
@@ -76,12 +76,12 @@ export const GeneralExamination = () => {
                 <label>PICCLE: </label>
                 <div className="piccle-section-input">
 
-                {piccleOptions.map((letter, index) => (
-                    <button key={index} type="button" onClick={() => togglePiccle(letter)}
-                    className={`piccle-button ${piccle.includes(letter) ? 'selected' : ''}`}>
-                        {letter}
-                    </button>
-                ))}
+                    {piccleOptions.map((letter, index) => (
+                        <button key={index} type="button" onClick={() => togglePiccle(letter)}
+                            className={`piccle-button ${piccle.includes(letter) ? 'selected' : ''}`}>
+                            {letter}
+                        </button>
+                    ))}
                 </div>
             </div>
         </div>

@@ -8,27 +8,27 @@ import { Signtaure } from "../components/signatureComp/Signature";
 import Button from "../components/buttonComp/Button";
 import { History } from "../components/illnessHistory/History";
 
-export const MainLayout = ()=> {
+export const MainLayout = () => {
     const methods = useForm()
-     const [formResetKey, setFormResetKey] = useState(0); 
+    const [formResetKey, setFormResetKey] = useState(0);
     const onSubmit = (data) => {
-    console.log("Form Data:", data);
-     methods.reset();
-     setFormResetKey(prev => prev + 1);
-  };
-  
-    return(
+        console.log("Form Data:", data);
+        methods.reset();
+        setFormResetKey(prev => prev + 1);
+    };
+
+    return (
         <>
-        <FormProvider {...methods}>
-            <form onSubmit={methods.handleSubmit(onSubmit)}>
-                <PatientProfile key={`patient-${formResetKey}`}/><hr />
-                <ChiefComplaint/><hr />
-                <History/><hr />
-                <GeneralExamination key={`general-${formResetKey}`} /><hr />
-                <Signtaure/>
-                <Button type="submit" className="submit-btn">Submit</Button>
-          </form>            
-        </FormProvider>
+            <FormProvider {...methods}>
+                <form onSubmit={methods.handleSubmit(onSubmit)}>
+                    <PatientProfile key={`patient-${formResetKey}`} /><hr />
+                    <ChiefComplaint /><hr />
+                    <History /><hr />
+                    <GeneralExamination key={`general-${formResetKey}`} /><hr />
+                    <Signtaure />
+                    <Button type="submit" className="submit-btn">Submit</Button>
+                </form>
+            </FormProvider>
         </>
     )
 }
