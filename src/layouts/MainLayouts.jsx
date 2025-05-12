@@ -26,9 +26,7 @@ export const MainLayout = ()=> {
                 <History/><hr />
                 <GeneralExamination key={`general-${formResetKey}`} />
                 <Signtaure/>
-                <div className="submit-container">
                 <Button type="submit" className="submit-btn">Submit</Button>
-                </div>
           </form>            
         </FormProvider>
         </>

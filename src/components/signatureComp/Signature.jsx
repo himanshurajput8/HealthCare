@@ -4,8 +4,8 @@ import { useFormContext } from "react-hook-form";
 
 
 export const Signtaure = () => {
-        const { register } = useFormContext();
-    
+    const { register } = useFormContext();
+
     return (
         <div>
             <div className="provisional-diagnosis">
@@ -14,9 +14,8 @@ export const Signtaure = () => {
             </div>
             <div className="signature">
                 <div>
-
-                <label htmlFor="signature">Signature: </label><br />
-                <input type="text" id="signature" {...register("signature")} />
+                    <label htmlFor="signature">Signature: </label><br />
+                    <input type="text" id="signature" {...register("signature")} />
                 </div>
             </div>
         </div>

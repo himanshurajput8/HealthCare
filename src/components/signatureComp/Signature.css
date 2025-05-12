@@ -1,12 +1,14 @@
-.provisional-diagnosis{
+.provisional-diagnosis {
     margin-left: 21rem;
     margin-top: 3rem;
 }
-.provisional-diagnosis label{
+
+.provisional-diagnosis label {
     font-weight: bold;
 }
-.provisional-diagnosis input{
-padding: 6px 10px;
+
+.provisional-diagnosis input {
+    padding: 6px 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -17,10 +19,22 @@ padding: 6px 10px;
     width: 78%;
     font-weight: bold;
 }
-.signature input{
+
+.signature input {
     padding: 6px 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-top: 1rem;
 
+}
+
+@media only screen and (max-width: 768px) {
+    .provisional-diagnosis {
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+    .signature{
+        width: 100%;
+        margin-top: 3rem;
+    }
 }

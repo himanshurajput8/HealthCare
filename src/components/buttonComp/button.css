@@ -12,4 +12,9 @@
     color: white;
     border: none;
     font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: rgba(0, 128, 0, 0.756);
 }
