@@ -24,7 +24,7 @@ export const MainLayout = ()=> {
                 <PatientProfile key={`patient-${formResetKey}`}/><hr />
                 <ChiefComplaint/><hr />
                 <History/><hr />
-                <GeneralExamination key={`general-${formResetKey}`} />
+                <GeneralExamination key={`general-${formResetKey}`} /><hr />
                 <Signtaure/>
                 <Button type="submit" className="submit-btn">Submit</Button>
           </form>            
